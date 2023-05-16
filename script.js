@@ -30,4 +30,8 @@ let classes = [
         return resultat;
     }
 }
-console.log(random(4)); 
+
+let displayClasses = document.getElementById("classesDisplay");
+displayClasses.innerHTML = random(classes);
+
+console.log(random(classes)); 
