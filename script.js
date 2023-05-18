@@ -21,17 +21,18 @@ let classes = [
     "Blue Mage"
   ];
 
-  function random (list) {
-    //Array.isArray(list) vérifie que c'est list est bien un tableau
-    //console.log(Array.isArray(list)); //affiche dans la console
-    if (Array.isArray(list)) {
-
-        let resultat = list[Math.floor(Math.random() * list.length)]; 
-        return resultat;
-    }
-}
-
 let displayClasses = document.getElementById("classesDisplay");
-displayClasses.innerHTML = random(classes);
 
-console.log(random(classes)); 
+//cette fonction selectionne un chiffre au hasard dans un paramètre liste
+function random(array) {
+  //Array.isArray(array) vérifie que c'est array est bien un tableau
+  //console.log(Array.isArray(array)); //affiche dans la console
+  if (Array.isArray(array)) {
+      //return permet de renvoyer mon resultat
+      return array[Math.floor(Math.random() * array.length)]; 
+  }
+}
+//cette fonction utilise le chiffre de random et l'associe a classes (puis le retourne dans le html)
+function randomClasses() {
+  displayClasses.innerHTML = random(classes);
+}
