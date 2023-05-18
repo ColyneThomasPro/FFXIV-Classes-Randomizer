@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(66, 65, 70);
+}
+.card{
+    width: 50vw; 
+    height: 80vh;
+}
+#imageCard {
+    background-image: url(assets/image/divImage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 100%;
+}
+
