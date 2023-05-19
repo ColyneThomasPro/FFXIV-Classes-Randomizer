@@ -1,30 +1,74 @@
-@import url(assets/font/OPTIEngeEtienne.otf);
-body {
+@font-face {
+    font-family: "fontTitle";
+    src: url(assets/font/fontTitle/BebasNeue-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "fontText";
+    src: url(assets/font/fontText/DidactGothic-Regular.ttf) format("truetype");
+}
+body{
     background-color: rgb(34, 34, 34);
-    color: white;
-    font-family:
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+
+}
+h1{	
+    font-family: "fontTitle";
+    font-size: 7.5em;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
 }
 .card{
-    width: 50vw; 
-    height: 80vh;
     background-color: rgba(255, 255, 255, 0.936);
-    margin-left: 24%;
-    border-radius: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-radius: 80px;
+    background: #333333;
+    box-shadow:  24px 24px 53px #101010,
+                -24px -24px 53px #101010;
+    font-family: "fontText"
 }
 #imageCard{
     background-image: url(assets/image/divImage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 35.94%; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 80px;
+    font-family: "fontText";
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0;
 }
-#displayClasses{
-    margin-left: 30%;
+table{
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+    font-size: 2em;
+    font-family: "fontTitle";
+    background-color: rgba(38, 38, 38, 0.6);
+    backdrop-filter: blur(0.8px);
+    border-radius: 80px;
+}
+/* #classesDisplay{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
 }
 #btn{
-    margin-left: 39%;
-    padding: 3%;
-}
+
+    padding: 2.5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-family: "fontTitle";
+    letter-spacing: 0.2em;
+    border-radius: 20px;
+    text-align: center;
+} */
 
 
