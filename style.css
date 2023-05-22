@@ -1,10 +1,6 @@
 @font-face {
     font-family: "fontTitle";
-    src: url(assets/font/fontTitle/BebasNeue-Regular.ttf) format("truetype");
-}
-@font-face {
-    font-family: "fontText";
-    src: url(assets/font/fontText/DidactGothic-Regular.ttf) format("truetype");
+    src: url(assets/font/minecraft/Minecraft.ttf) format("truetype");
 }
 body{
     background-color: rgb(34, 34, 34);
@@ -12,9 +8,9 @@ body{
     overflow: hidden;
 
 }
-h1{	
+.titles{	
     font-family: "fontTitle";
-    font-size: 7.5em;
+    font-size: 3em;
     display: flex;
     justify-content: center;
     margin: 1%;
@@ -23,17 +19,15 @@ h1{
     background-color: rgba(255, 255, 255, 0.936);
     margin-left: 12%;
     margin-right: 12%;
-    border-radius: 80px;
     background: #333333;
     box-shadow:  24px 24px 53px #101010,
                 -24px -24px 53px #101010;
     font-family: "fontText"
 }
 #imageCard{
-    background-image: url(assets/image/divImage.jpg);
+    background-color: aliceblue;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 80px;
     font-family: "fontText";
     display: flex;
     justify-content: space-evenly;
@@ -46,11 +40,16 @@ table{
     padding-top: 20%;
     padding-bottom: 20%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "fontTitle";
     background-color: rgba(38, 38, 38, 0.6);
     backdrop-filter: blur(0.8px);
-    border-radius: 80px;
+}
+.tdHome:hover{
+    background-color: #333333;
+}
+img{
+    width: 50vh;
 }
 /* #classesDisplay{
     margin-left: auto;
