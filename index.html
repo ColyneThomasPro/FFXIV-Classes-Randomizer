@@ -7,30 +7,26 @@
     <meta content="generateur aleatoir de classes ffxiv">
     <link rel="stylesheet" href="style.css">
     <title>FF XIV Classes Randomizer</title>
-    
 </head>
 <body>
-    <section>
-        <div class="flex">
-            <div>
-            <h1>FF XIV <br> RANDOM CLASS GENERATOR</h1>
+    <section class="sectionHome">
+        <div class="logo-flex">
+            <img src="assets/image/alphinaud.png" alt="" class="logo-img">
+            <h1 class="logo-title">FF XIV RANDOM CLASS GENERATOR</h1>
         </div>
-            <div><img src="assets/image/alphinaud.png" alt=""></div>
-        </div>
-        <div class="divCard">
-            <div id="card">
-                <table>
-                    <td class="tdHome"><p>RANDOMIZE YOUR FUTURE CLASS</p></td>
-                    <td class="tdHome"><p>KNOW MORE ABOUT THE CLASSES</p></td>
-                </table>
-            </div>
-        </div>
-        <div class="space"></div> 
+        <p class="slogan">If you're unsure what to play in your favorite game, FF XIV, we're here to randomize it for you! You can take the challenge or reroll for another option... Enjoy the game!</p>
     </section>
+    <h2 class="sectionRandomize-title">RANDOMIZE YOUR FUTURE CLASS</h2>
     <section class="sectionRandomize">
-        <div id="classesDisplay"></div>
         <input id="btn" type="button" value="RANDOMIZE !" onclick="randomClasses();">
+        <div id="classesDisplay"></div>
     </section>
 </body>
+<footer class="footer">
+    <ul class="contact-container">
+        <li><a href="https://github.com/ColyneThomasPro" class="contact-link">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/colyne-thomas/" class="contact-link">Linkedin</a></li>
+    </ul>
+</footer>
 <script src="script.js"></script>
 </html> 

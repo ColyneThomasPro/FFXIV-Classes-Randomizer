@@ -1,114 +1,96 @@
 @font-face {
-    font-family: "fontTitle";
+    font-family: "Pixel";
     src: url(assets/font/minecraft/Minecraft.ttf) format("truetype");
 }
-::-webkit-scrollbar{
-    display: none;
+
+@font-face {
+    font-family: "Quantico";
+    src: url(assets/font/quantico/Quantico-Regular.ttf) format(truetype);
 }
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
+    font-family: "Pixel";
 }
 
-body{
-    background-color: rgb(34, 34, 34);
+body {
+    background-color: #222222;
     color: rgb(255, 255, 255);
 }
-.flex{
+
+.sectionHome {
+    width: 100vw;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    padding: 3% 0% 5% 0%;
+    flex-direction: column;
 }
 
-.flex :first-child{	
-    font-family: "fontTitle";
-    font-size: 3.3rem;
-    padding-right: 35%;
-    padding-left: 0%;
-    line-height: 4rem;
-}
-.flex :nth-child(2n){
+.logo-flex {
     display: flex;
-    justify-content: right;
-    /* padding-right: 0%;
-    padding-left: 0%; */
+    align-items: center;
+    margin-top: 1%;
 }
-.flex img{
+
+.logo-img {
     height: 180px;
 }
-.divCard{
-    background-color: #3c3a66;
-    margin-left: 12%;
-    margin-right: 12%;
-    box-shadow:  24px 24px 53px #101010,
-                -24px -24px 53px #101010;
+
+.logo-title {
+    font-size: 3rem;
 }
 
-.tdHome {
-    padding: 2%;
-}
-
-.tdHome:hover{
-    background-color: #333333;
-    padding: 2%;
-}
-#card{
-    /* background-color: aliceblue; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    padding: 0;
-}
-table{
-    height: 100%;
-    width: 100%;
-    padding-top: 14%;
-    padding-bottom: 14%;
-    text-align: center;
+.slogan {
+    margin: 4%;
+    font-family: "Quantico";
     font-size: 1.5rem;
-    font-family: "fontTitle";
+    text-align: center;
 }
-.space{
-    padding: 10%;
-}
-
-/* .box {
-    background-image: url(assets/image/chocobo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 120px;
-    position: relative;
-    animation: repeatit 12s linear 0s infinite alternate;
-    margin-top: -60px;
-}
-@keyframes repeatit {
-    from {left: 0%;}
-    to {left: 98%;}
-} */
 
 .sectionRandomize {
-    width: 100vw;
-    height: ;
-
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
     padding: 1em;
     background-color: #3c3a66;
+    text-align: center;
+    padding-top: 4%;
 }
+
 #btn {
     padding: 2.5%;
     padding-left: 6%;
     padding-right: 6%;
-    font-family: "fontTitle";
+    font-family: "Pixel";
     letter-spacing: 0.2em;
     text-align: center;
 }
 
+#classesDisplay {
+    height: 2vh;
+    padding: 5%;
+    font-family: "Quantico";
+    font-size: 2rem;
+}
+
+.footer {
+    width: 100vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container li {
+    padding: 15px 20px;
+}
+
+.contact-link {
+    color: white;
+    font-family: "Quantico";
+}
+
+.contact-link:visited {
+    color: white;
+}
 
