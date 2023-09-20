@@ -23,16 +23,16 @@ let classes = [
 
 let displayClasses = document.getElementById("classesDisplay");
 
-//cette fonction selectionne un chiffre au hasard dans un paramètre liste
+// This function selects a random number from a given array
 function random(array) {
-  //Array.isArray(array) vérifie que c'est array est bien un tableau
-  //console.log(Array.isArray(array)); //affiche dans la console
+  // Array.isArray(array) checks if the variable 'array' is indeed an array
+  // console.log(Array.isArray(array)); // displays in the console
   if (Array.isArray(array)) {
-      //return permet de renvoyer mon resultat
+      // The 'return' statement allows us to return the result
       return array[Math.floor(Math.random() * array.length)]; 
   }
 }
-//cette fonction utilise le chiffre de random et l'associe a classes (puis le retourne dans le html)
+// This function uses the random number and associates it with 'classes' (then returns it to the HTML)
 function randomClasses() {
   displayClasses.innerHTML = random(classes);
 }
